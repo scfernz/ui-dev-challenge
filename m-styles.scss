@@ -1,0 +1,25 @@
+// Color Pallette
+$background-color: #F3F3F5;
+$highlight-color: #38A085;
+$dark-color: #999999;
+$card-background: #FFFFFF;
+$btn-primary: #2382C0;
+$font-color: #000000;
+
+// Global Styles
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $background-color;
+  color: $font-color;
+}
+
+.card {
+  background-color: $card-background;
+  padding: 20px;
+}

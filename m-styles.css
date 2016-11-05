@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background-color: #F3F3F5;
+  color: #000000; }
+
+.card {
+  background-color: #FFFFFF;
+  padding: 20px; }
+
+/*# sourceMappingURL=m-styles.css.map */
