@@ -4,7 +4,7 @@ $highlight-color: #38A085;
 $dark-color: #999999;
 $card-background: #FFFFFF;
 $btn-primary: #2382C0;
-$font-color: #000000;
+$font-color: darken(#A9A9A9, 20%);
 
 // Global Styles
 html {
@@ -17,9 +17,99 @@ html {
 body {
   background-color: $background-color;
   color: $font-color;
+  font-family: helvetica;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .card {
+  position: relative;
   background-color: $card-background;
   padding: 20px;
+  margin: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.analytics {
+  height: 350px;
+  width: 1200px;
+  .analytics-header {
+    position: absolute;
+    top: 20px;
+    h2, p {
+      margin: 0;
+    }
+  }
+  .graph {
+    position: absolute;
+    top: 80px;
+  }
+  .orders {
+    position: absolute;
+    top: 80px;
+    margin-left: 750px;
+    .order-number {
+      font-size: 1.8em;
+    }
+  }
+  .analytics-footer {
+    position: absolute;
+    bottom: 15px;
+  }
+  .left {
+    left: 20px;
+  }
+  .right {
+    right: 20px;
+  }
+}
+
+.movie {
+  display: inline-block;
+  width: 583px;
+  .movie-date {
+      font-size: 1.2em;
+      line-height: 1.6;
+  }
+}
+
+.slider {
+  width: 380px;
+  position: relative;
+  .bar {
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  .bar-overlay {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+  }
+  .grey {
+    width: 45%;
+    background: $font-color;
+  }
+  .teal {
+    width: 60%;
+    background: $highlight-color;
+  }
+}
+
+.btn-primary {
+  background-color: $btn-primary;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 15px;
+}
+
+.space-left {
+  margin-left: 100px;
 }

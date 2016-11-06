@@ -6,10 +6,81 @@ html {
 
 body {
   background-color: #F3F3F5;
-  color: #000000; }
+  color: #767676;
+  font-family: helvetica; }
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
 
 .card {
+  position: relative;
   background-color: #FFFFFF;
-  padding: 20px; }
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.analytics {
+  height: 350px;
+  width: 1200px; }
+  .analytics .analytics-header {
+    position: absolute;
+    top: 20px; }
+    .analytics .analytics-header h2, .analytics .analytics-header p {
+      margin: 0; }
+  .analytics .graph {
+    position: absolute;
+    top: 80px; }
+  .analytics .orders {
+    position: absolute;
+    top: 80px;
+    margin-left: 750px; }
+    .analytics .orders .order-number {
+      font-size: 1.8em; }
+  .analytics .analytics-footer {
+    position: absolute;
+    bottom: 15px; }
+  .analytics .left {
+    left: 20px; }
+  .analytics .right {
+    right: 20px; }
+
+.movie {
+  display: inline-block;
+  width: 583px; }
+  .movie .movie-date {
+    font-size: 1.2em;
+    line-height: 1.6; }
+
+.slider {
+  width: 380px;
+  position: relative; }
+  .slider .bar {
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px; }
+  .slider .bar-overlay {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px; }
+  .slider .grey {
+    width: 45%;
+    background: #767676; }
+  .slider .teal {
+    width: 60%;
+    background: #38A085; }
+
+.btn-primary {
+  background-color: #2382C0;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 15px; }
+
+.spaced {
+  margin-left: 100px; }
 
 /*# sourceMappingURL=m-styles.css.map */
