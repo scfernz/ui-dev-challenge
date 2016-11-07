@@ -34,7 +34,7 @@ body {
     margin: 0 !important;
   }
   .fixed-height-column {
-    height: 350px;
+    height: 380px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -94,14 +94,16 @@ body {
   padding: 10px;
 }
 
-.space-left {
-  margin-left: 100px;
-}
-
 .flex-vert {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 // Media queries
@@ -110,21 +112,35 @@ body {
 o	Small:  320px – 599px (Mobile)
 o	Medium:  600px – 1279px (Tablet)
 o	Large:  1280px - 1920px (Desktop)
-
-No media query since this is the default in Bootstrap */
+*/
 
 /* Tablets */
-@media (max-width: 768px) {
+@media handheld, screen and (min-width: 768px) and (max-width: 900px) {
   .analytics {
     .sales-analysis, .sales-info {
+      text-align: center;
+    }
+  }
+  .movie {
+    .movie-header {
       text-align: center;
     }
   }
 }
 
 /* Small devices */
-@media (max-width: 599px) {
-  .space-left {
-    margin-left: 50px;
+@media handheld, screen and (max-width: 768px) {
+  .analytics {
+    .analytics-header {
+      text-align: center;
+    }
+    .sales-analysis, .sales-info {
+      text-align: center;
+    }
+  }
+  .movie {
+    .movie-header {
+      text-align: center;
+    }
   }
 }
