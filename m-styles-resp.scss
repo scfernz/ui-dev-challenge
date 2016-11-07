@@ -35,6 +35,8 @@ body {
   }
   .fixed-height-column {
     height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .graph {
     position: absolute;
@@ -44,6 +46,9 @@ body {
     .order-number {
       font-size: 1.8em;
     }
+  }
+  .sales-info {
+    text-align: right;
   }
 }
 
@@ -97,4 +102,29 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+// Media queries
+
+/* Screen size key
+o	Small:  320px – 599px (Mobile)
+o	Medium:  600px – 1279px (Tablet)
+o	Large:  1280px - 1920px (Desktop)
+
+No media query since this is the default in Bootstrap */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .analytics {
+    .sales-analysis, .sales-info {
+      text-align: center;
+    }
+  }
+}
+
+/* Small devices */
+@media (max-width: 599px) {
+  .space-left {
+    margin-left: 50px;
+  }
 }
