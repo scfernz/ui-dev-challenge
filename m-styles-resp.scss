@@ -33,14 +33,8 @@ body {
   h2, p {
     margin: 0 !important;
   }
-  .fixed-height-column {
-    height: 380px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
   .graph {
-    position: absolute;
-    top: 80px;
+    padding: 5px;
   }
   .orders {
     .order-number {
@@ -53,6 +47,9 @@ body {
 }
 
 .movie {
+  .movie-header {
+    margin-left: 15%;
+  }
   .movie-date {
       font-size: 1.2em;
   }
@@ -128,6 +125,7 @@ o	Large:  1280px - 1920px (Desktop)
   }
   .movie {
     .movie-header {
+      margin-left: 0;
       text-align: center;
     }
   }
@@ -140,11 +138,13 @@ o	Large:  1280px - 1920px (Desktop)
       text-align: center;
     }
     .sales-analysis, .sales-info {
+      margin-top: 10px;
       text-align: center;
     }
   }
   .movie {
     .movie-header {
+      margin-left: 0;
       text-align: center;
     }
   }

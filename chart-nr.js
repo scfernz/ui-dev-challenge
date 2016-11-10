@@ -1,10 +1,8 @@
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'line',
-  responsive: 'true',
-  maintainAspectRatio: 'true',
   data: {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [{
       label: 'Movie 1',
       data: [65, 60, 40, 50, 35, 25, 30],

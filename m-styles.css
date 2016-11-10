@@ -30,7 +30,9 @@ p {
       margin: 0; }
   .analytics .graph {
     position: absolute;
-    top: 80px; }
+    top: 80px;
+    height: 300px;
+    width: 700px; }
   .analytics .orders {
     position: absolute;
     top: 100px;
