@@ -11,20 +11,22 @@
   <body>
     <div class="col-sm-12">
       <section class="analytics card">
-        <div class="row">
-          <div class="col-md-8 col-sm-8 col-xs-12 flex-vert fixed-height-column">
+        <div class="row flex-row">
+          <div class="col-md-8 col-sm-8 col-xs-12 flex-vert">
             <div class="analytics-header">
               <h2>Total Movie Sales</h2>
               <p>Comparison - Movie 1 and Movie 2</p>
             </div>
-            <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+            <div>
+              <canvas id="myChart"></canvas>
+            </div>
             <div class="sales-analysis">
               <p>
                 <strong>Analysis of Sales:</strong> The value has been changed over time, and last month reached a level over $50,000.
               </p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 flex-vert fixed-height-column">
+          <div class="col-md-4 col-sm-4 col-xs-12 flex-vert">
             <div class="sales-info">
               <p>Average value of sales in the past month in: <strong>United States</strong></p>
               <p>All sales: 162,862</p>
@@ -82,8 +84,13 @@
         </section>
       </div>
     </row>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+    <script src="chart.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
