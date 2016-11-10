@@ -1,84 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Mitchell UI Design Challenge - Not Responsive</title>
+    <!-- font awesome library -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- custom stylesheet -->
     <link rel="stylesheet" href="m-styles.css" type="text/css">
-  </head>
-  <body>
+</head>
+
+<body>
+  <!-- analytics section -->
     <section class="analytics card">
-      <div class="analytics-header left">
-        <h2>Total Movie Sales</h2>
-        <p>Comparison - Movie 1 and Movie 2</p>
-      </div>
-      <div class="analytics-header right">
-        <p>Average value of sales in the past month in: <strong>United States</strong></p>
-        <p style="text-align: right;">All sales: 162,862</p>
-      </div>
-      <div class="left graph">
-        <canvas id="myChart" height="300" width="700"></canvas>
-      </div>
-      <div class="orders">
-        <p class="order-number">2,346</p>
-        <p>Total Orders - Movie 1</p>
-        <div class="slider">
-          <div class="bar"></div>
-          <div class="bar-overlay grey"></div>
+        <div class="analytics-header left">
+            <h2>Total Movie Sales</h2>
+            <p>Comparison - Movie 1 and Movie 2</p>
         </div>
-        <p class="order-number">4,422</p>
-        <p>Total Orders - Movie 2</p>
-        <div class="slider">
-          <div class="bar"></div>
-          <div class="bar-overlay teal"></div>
+        <div class="analytics-header right">
+            <p>Average value of sales in the past month in: <strong>United States</strong></p>
+            <p style="text-align: right;">All sales: 162,862</p>
         </div>
-      </div>
-      <div class="analytics-footer left">
-        <p>
-          <strong>Analysis of Sales:</strong> The value has been changed over time, and last month reached a level over $50,000.
-        </p>
-      </div>
-      <div class="analytics-footer right">
-        <p><i class="fa fa-clock-o" aria-hidden="true"></i> Update on 16.07.2015</p>
-      </div>
+        <div class="left graph">
+            <canvas id="myChart" height="300" width="700"></canvas>
+        </div>
+        <div class="orders">
+            <p class="order-number">2,346</p>
+            <p>Total Orders - Movie 1</p>
+            <div class="slider">
+                <div class="bar"></div>
+                <div class="bar-overlay grey"></div>
+            </div>
+            <p class="order-number">4,422</p>
+            <p>Total Orders - Movie 2</p>
+            <div class="slider">
+                <div class="bar"></div>
+                <div class="bar-overlay teal"></div>
+            </div>
+        </div>
+        <div class="analytics-footer left">
+            <p>
+                <strong>Analysis of Sales:</strong> The value has been changed over time, and last month reached a level over $50,000.
+            </p>
+        </div>
+        <div class="analytics-footer right">
+            <p><i class="fa fa-clock-o" aria-hidden="true"></i> Update on 16.07.2015</p>
+        </div>
     </section>
+    <!-- end analytics section -->
+    <!-- movie 1 section -->
     <section class="movie card">
-      <div class="movie-header">
-        <h1>Movie 1</h1>
-        <p><strong>Release Date</strong> <i class="fa fa-clock-o" aria-hidden="true"></i> 04 Jan 2015</p>
-        <br/>
-      </div>
-      <div class="movie-date">
-        <p>May 3 2015
-        <button class="btn-primary space-left">Buy Tickets</button></p>
-      </div>
-      <div class="movie-date">
-        <p>May 4 2015
-        <button class="btn-primary space-left">Buy Tickets</button></p>
-      </div>
+        <div class="movie-header">
+            <h1>Movie 1</h1>
+            <p><strong>Release Date</strong> <i class="fa fa-clock-o" aria-hidden="true"></i> 04 Jan 2015</p>
+            <br/>
+        </div>
+        <div class="movie-date">
+            <p>May 3 2015
+                <button class="btn-primary space-left">Buy Tickets</button>
+            </p>
+        </div>
+        <div class="movie-date">
+            <p>May 4 2015
+                <button class="btn-primary space-left">Buy Tickets</button>
+            </p>
+        </div>
     </section>
+    <!-- end movie 1 section -->
+    <!-- movie 2 section -->
     <section class="movie card">
-      <div class="movie-header">
-        <h1>Movie 2</h1>
-        <p><strong>Release Date</strong> <i class="fa fa-clock-o" aria-hidden="true"></i> 04 Jan 2015</p>
-        <br/>
-      </div>
-      <div class="movie-date">
-        <p>May 3 2015
-        <button class="btn-primary space-left">Buy Tickets</button></p>
-      </div>
-      <div class="movie-date">
-        <p>May 3 2015
-        <button class="btn-primary space-left">Buy Tickets</button></p>
-      </div>
+        <div class="movie-header">
+            <h1>Movie 2</h1>
+            <p><strong>Release Date</strong> <i class="fa fa-clock-o" aria-hidden="true"></i> 04 Jan 2015</p>
+            <br/>
+        </div>
+        <div class="movie-date">
+            <p>May 3 2015
+                <button class="btn-primary space-left">Buy Tickets</button>
+            </p>
+        </div>
+        <div class="movie-date">
+            <p>May 3 2015
+                <button class="btn-primary space-left">Buy Tickets</button>
+            </p>
+        </div>
     </section>
-    <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+    <!-- end movie 2 section -->
+    <!-- jQuery for bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- chart.js files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
     <script src="chart-nr.js"></script>
-  </body>
+</body>
+
 </html>
